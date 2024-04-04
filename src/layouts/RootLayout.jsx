@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { Navbar, Footer } from "../components";
 
 const MainLayout = () => {
@@ -8,7 +9,9 @@ const MainLayout = () => {
     //Footer
     <>
       <Navbar />
-      <div className="container mx-auto">Main Layout</div>
+      <div className="container mx-auto">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
