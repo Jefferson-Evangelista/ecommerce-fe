@@ -1,7 +1,10 @@
-import RootLayout from "./layouts/RootLayout";
-
+import { Banner } from "./components/Banner";
 function App() {
-  // return <RootLayout />; 
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
 export default App;
