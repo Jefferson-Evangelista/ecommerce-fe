@@ -1,0 +1,4 @@
+.borderShape {
+  border-radius: 100% 0% 80% 20% / 56% 48% 52% 44%;
+  border: 1px solid red;
+}

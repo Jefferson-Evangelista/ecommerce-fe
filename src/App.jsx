@@ -1,8 +1,9 @@
-import { Banner } from "./components/Banner";
+import { Banner, TopProducts } from "./components";
 function App() {
   return (
     <>
       <Banner />
+      <TopProducts />
     </>
   );
 }

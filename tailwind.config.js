@@ -13,7 +13,7 @@ export default {
         darkGrey: "#B8B8B8",
         lightGrey: "#ECECEC",
         light: "#FAFAFA",
-        yellow: "#FFD470",
+        yellow: "#ffc94b",
       },
     },
   },
