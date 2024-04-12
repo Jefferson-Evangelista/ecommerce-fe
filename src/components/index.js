@@ -4,5 +4,14 @@ import Banner from "./Banner/Banner";
 import ButtonLink from "./ButtonLink/ButtonLink";
 import SectionTitle from "./SectionTitle/SectionTitle";
 import TopProducts from "./TopProducts/TopProducts";
+import SecondaryBanner from "./SecondaryBanner/SecondaryBanner";
 
-export { Navbar, Footer, Banner, ButtonLink, SectionTitle, TopProducts };
+export {
+  Navbar,
+  Footer,
+  Banner,
+  ButtonLink,
+  SectionTitle,
+  TopProducts,
+  SecondaryBanner,
+};

@@ -1,11 +1,12 @@
 import React from "react";
 import { bannerImg } from "../../assets";
 import { ButtonLink } from "../../components";
+import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto mb-10 mt-20 flex items-center justify-center">
-      <div className="w-1/2">
+    <div className="container mx-auto my-24 flex items-center justify-around">
+      <div className="flex-1">
         <h1 className="mb-4 font-krona text-3xl">
           Unveil Your Radiance with Every Luxurious Touch. Explore Our Range and
           Rediscover Your Glow!
@@ -15,13 +16,13 @@ const Banner = () => {
           procedure and samepage your department cloud native container based,
           for drop-dead date.
         </p>
-        <ButtonLink path="/about" text="see more" />
+        <ButtonLink path="/about" text="see more" isMain />
       </div>
-      <div className="ml-8 flex w-1/2 items-center justify-center">
+      <div className="ml-8 flex flex-1 items-center justify-end">
         <img
           src={bannerImg}
           alt="Beauty products on a blanket"
-          className=" borderShape h-[350px] w-full"
+          className="borderShape object-fit h-[550px] w-[550px] drop-shadow-2xl"
         />
       </div>
     </div>

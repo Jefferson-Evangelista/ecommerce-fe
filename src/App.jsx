@@ -1,9 +1,10 @@
-import { Banner, TopProducts } from "./components";
+import { Banner, TopProducts, SecondaryBanner } from "./components";
 function App() {
   return (
     <>
       <Banner />
       <TopProducts />
+      <SecondaryBanner />
     </>
   );
 }

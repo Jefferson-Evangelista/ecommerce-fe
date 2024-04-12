@@ -7,7 +7,7 @@ const HeartIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currectColor"
+      stroke="currentColor"
       className="mr-4 h-6 w-6"
     >
       <path
