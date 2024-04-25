@@ -9,9 +9,7 @@ const MainLayout = () => {
     //Footer
     <>
       <Navbar />
-      <div className="container mx-auto">
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   );

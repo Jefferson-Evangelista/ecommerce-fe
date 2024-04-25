@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="h-32 bg-dark px-8 py-4 text-light">
       <div className="flex justify-between">
         <a className="font-krona text-2xl text-yellow " href="">
-          Beautify
+          Aphrodite
         </a>
         <div className="flex items-center">
           {links.map((link, index) => (
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-xs text-darkGrey">React Project made by Welly</p>
+      <p className="text-xs text-darkGrey">Be beautiful</p>
     </footer>
   );
 };

@@ -5,6 +5,7 @@ import ButtonLink from "./ButtonLink/ButtonLink";
 import SectionTitle from "./SectionTitle/SectionTitle";
 import TopProducts from "./TopProducts/TopProducts";
 import SecondaryBanner from "./SecondaryBanner/SecondaryBanner";
+import UniqueSellingPoint from "./UniqueSellingPoint/UniqueSellingPoint";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   SectionTitle,
   TopProducts,
   SecondaryBanner,
+  UniqueSellingPoint,
 };

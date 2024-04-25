@@ -4,7 +4,7 @@ import { bannerImg2 } from "../../assets";
 
 const SecondaryBanner = () => {
   return (
-    <div className="bg-pink flex w-full items-center justify-between px-24">
+    <div className="container mx-auto flex w-full items-center justify-between bg-pink px-24">
       <div className="text-lg">
         <h3 className="mb-4 font-krona">
           <br /> Be natural, <br /> be smooth, <br /> beautify
@@ -13,10 +13,9 @@ const SecondaryBanner = () => {
       </div>
       <div className="ml-4">
         <img
-          className="py-8"
+          className="h-[250px] w-[250px] py-8"
           src={bannerImg2}
           alt="skincare products"
-          width={250}
         />
       </div>
     </div>
