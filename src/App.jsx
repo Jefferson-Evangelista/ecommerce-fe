@@ -1,18 +1,19 @@
 import {
   Banner,
+  Benefits,
   TopProducts,
-  SecondaryBanner,
   UniqueSellingPoint,
 } from "./components";
-function App() {
+
+const App = () => {
   return (
     <>
       <Banner />
       <TopProducts />
-      <SecondaryBanner />
       <UniqueSellingPoint />
+      <Benefits />
     </>
   );
-}
+};
 
 export default App;

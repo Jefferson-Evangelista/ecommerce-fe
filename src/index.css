@@ -13,5 +13,5 @@
 /* font-family: "Poppins", sans-serif; */
 
 body {
-  @apply bg-lightGrey font-base text-dark;
+  @apply bg-light font-base text-dark;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonLink } from "../../components";
+import { ButtonLink, SecondaryBanner } from "../../components";
 
 const TopProducts = () => {
   return (
@@ -11,6 +11,7 @@ const TopProducts = () => {
 
       {/* Products */}
       <div className="h-80"></div>
+      <SecondaryBanner />
     </>
   );
 };

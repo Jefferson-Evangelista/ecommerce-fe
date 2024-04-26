@@ -4,7 +4,7 @@ import { bannerImg2 } from "../../assets";
 
 const SecondaryBanner = () => {
   return (
-    <div className="container mx-auto flex w-full items-center justify-between bg-pink px-24">
+    <div className="container relative bottom-[-100px] mx-auto flex w-full items-center justify-between bg-pink px-24">
       <div className="text-lg">
         <h3 className="mb-4 font-krona">
           <br /> Be natural, <br /> be smooth, <br /> beautify
