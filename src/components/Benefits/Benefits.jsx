@@ -5,23 +5,21 @@ const Benefits = () => {
   const benefits = [
     {
       title: "Delivery",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Lorem ipsum dolor sit amet elit. Odit, sunt optio facere harum consequuntur debitis, animi.",
     },
     {
       title: "Products",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Lorem ipsum dolor sit amet consectetur atque ipsa, beatae adipisci!",
     },
     {
       title: "Payments",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores dolorem sint illum.",
     },
   ];
   return (
-    <div className="container mx-auto my-10 flex border border-rose-400">
+    <div className="container mx-auto mb-10 flex justify-evenly">
       {benefits.map((item) => (
-        <div className="w-1/3">
-          <BenefitsItem props={item} />
-        </div>
+        <BenefitsItem props={item} />
       ))}
     </div>
   );
