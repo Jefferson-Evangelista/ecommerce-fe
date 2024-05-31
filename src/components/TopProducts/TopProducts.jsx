@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ButtonLink, SecondaryBanner } from "../../components";
+import useGetProducts from "../../hooks/useGetProducts";
 
 const TopProducts = () => {
+  const { products, getTopProducts } = useGetProducts();
+
+  useEffect(() => {
+    getTopProducts();
+  }, []);
+
   return (
     <>
       <div className="container mx-auto flex items-center justify-between">
@@ -10,7 +17,11 @@ const TopProducts = () => {
       </div>
 
       {/* Products */}
-      <div className="h-80"></div>
+      <div className="h-80">
+        {products.map((product, index) => (
+          <p key={`${product}.${index}`}>{product.id}</p>
+        ))}
+      </div>
       <SecondaryBanner />
     </>
   );

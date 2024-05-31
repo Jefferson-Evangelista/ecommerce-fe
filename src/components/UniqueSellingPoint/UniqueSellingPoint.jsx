@@ -2,7 +2,7 @@ import { uspImg } from "../../assets";
 
 const UniqueSellingPoint = () => {
   return (
-    <div className="mb-10 flex items-start justify-center bg-lightGrey pb-16 pt-40">
+    <div className="mb-10 flex items-start justify-center bg-lightGrey pb-16 pt-4 ">
       <div className="flex w-1/2 items-center px-16">
         <img
           src={uspImg}

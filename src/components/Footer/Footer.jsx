@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             {aboutLinks.map((link, index) => (
               <a
-                className={`${index === 0 ? "text-md font-krona" : "text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
+                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
                 href="/"
                 key={index}
               >
@@ -45,7 +45,7 @@ const Footer = () => {
           <div>
             {skincareLinks.map((link, index) => (
               <a
-                className={`${index === 0 ? "text-md font-krona" : "text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
+                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
                 href="/"
                 key={index}
               >
@@ -56,7 +56,7 @@ const Footer = () => {
           <div>
             {makeupLinks.map((link, index) => (
               <a
-                className={`${index === 0 ? "text-md font-krona" : "text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
+                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
                 href="/"
                 key={index}
               >
@@ -67,7 +67,7 @@ const Footer = () => {
           <div>
             {supplementLinks.map((link, index) => (
               <a
-                className={`${index === 0 ? "text-md font-krona" : "text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
+                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
                 href="/"
                 key={index}
               >
@@ -78,7 +78,7 @@ const Footer = () => {
           <div>
             {luxuryLinks.map((link, index) => (
               <a
-                className={`${index === 0 ? "text-md font-krona" : "text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
+                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
                 href="/"
                 key={index}
               >
