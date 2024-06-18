@@ -1,4 +1,5 @@
 import About from "./About";
 import Search from "./Search";
+import Product from "./Product";
 
-export { About, Search };
+export { About, Search, Product };

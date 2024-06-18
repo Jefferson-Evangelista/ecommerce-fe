@@ -13,7 +13,7 @@ import {
 
 //layout
 import RootLayout from "./layouts/RootLayout.jsx";
-import { Search, About } from "./pages";
+import { Search, About, Product } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +22,7 @@ const router = createBrowserRouter(
         <Route index element={<App />} />
         <Route path="/search" element={<Search />} />
         <Route path="/about" element={<About />} />
+        <Route path="/product/:id" element={<Product />} />
       </Route>
     </>,
   ),

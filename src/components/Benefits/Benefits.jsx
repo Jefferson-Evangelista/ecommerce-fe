@@ -17,7 +17,7 @@ const Benefits = () => {
     },
   ];
   return (
-    <div className="container mx-auto mb-10 flex justify-evenly">
+    <div className="container mx-auto my-10 flex justify-evenly">
       {benefits.map((item, index) => (
         <BenefitsItem props={item} key={`${item}.${index}`} />
       ))}
