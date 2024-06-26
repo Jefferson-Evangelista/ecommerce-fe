@@ -1,18 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   ButtonLink,
-  Product,
+  ProductCard,
   SecondaryBanner,
   SectionTitle,
 } from "../../components";
-import useGetProducts from "../../hooks/useGetProducts";
+import useGetTopProducts from "../../hooks/useGetTopProducts";
 
 const TopProducts = () => {
-  const { products, getTopProducts } = useGetProducts();
-
-  useEffect(() => {
-    getTopProducts();
-  }, []);
+  const products = useGetTopProducts();
 
   return (
     <>
@@ -23,7 +19,7 @@ const TopProducts = () => {
         </div>
         <div className="flex flex-wrap justify-center">
           {products.map((product, index) => (
-            <Product
+            <ProductCard
               key={product.id}
               id={product.id}
               name={product.name}

@@ -8,7 +8,10 @@ import SecondaryBanner from "./SecondaryBanner/SecondaryBanner";
 import UniqueSellingPoint from "./UniqueSellingPoint/UniqueSellingPoint";
 import Benefits from "./Benefits/Benefits";
 import BenefitsItem from "./BenefitsItem/BenefitsItem";
-import Product from "./Product/Product";
+import ProductCard from "./ProductCard/ProductCard";
+import ProductPrice from "./ProductPrice/ProductPrice";
+import ProductTitle from "./ProductTitle/ProductTitle";
+import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
 
 export {
   Navbar,
@@ -21,5 +24,8 @@ export {
   UniqueSellingPoint,
   Benefits,
   BenefitsItem,
-  Product,
+  ProductCard,
+  ProductPrice,
+  ProductTitle,
+  RecommendedProducts,
 };

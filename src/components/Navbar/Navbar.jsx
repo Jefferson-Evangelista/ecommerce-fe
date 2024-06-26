@@ -6,7 +6,7 @@ import { CartIcon, HeartIcon } from "../Icons";
 
 const Navbar = () => (
   <nav className="container mx-auto flex items-end justify-between py-3 font-krona">
-    <a href="/" className="navbar__logo text-2xl">
+    <a href="/" className="navbar__logo text-2xl font-bold">
       Aphrodite
     </a>
 

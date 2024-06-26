@@ -1,7 +1,8 @@
-import useGetProducts from "../hooks/useGetProducts";
+import useGetProduct from "../hooks/useGetProduct";
+import { ProductPrice, ProductTitle, RecommendedProducts } from "../components";
 
 const Product = () => {
-  const { products, singleProduct } = useGetProducts();
+  const { singleProduct } = useGetProduct();
 
   if (!singleProduct) return <p>Loading...</p>;
 
@@ -10,12 +11,11 @@ const Product = () => {
       className="container mx-auto mt-20 h-screen
     "
     >
-      <div className="mb-10">
-        <h5 className="font-krona text-sm">{singleProduct.name}</h5>
-        <p className="text-sm text-darkGrey">{singleProduct.product_type}</p>
-      </div>
-
       <div className="mb-10 flex w-full">
+        <ProductTitle
+          name={singleProduct.name}
+          type={singleProduct.product_type}
+        />
         <div className="flex w-1/2 items-center justify-center">
           <img
             width="200"
@@ -36,18 +36,11 @@ const Product = () => {
           {/* category */}
           {/* <p>{singleProduct.category}</p>z */}
           <div className="my-10 flex justify-between">
-            <div className="relative">
-              <div className="absolute top-0 z-[-1] h-10 w-10 rounded-full bg-lightGrey" />
-              <p className="ml-4 pt-2 font-krona text-xl">
-                {singleProduct.price} &#36;
-              </p>
-            </div>
+            <ProductPrice price={singleProduct.price} isLarge />
             {/* <div>counter</div> */}
-            <div>
-              <button className="inline-block rounded-full bg-yellow px-6 py-3 font-krona text-xs font-bold">
-                Add to cart
-              </button>
-            </div>
+            <button className="inline-block rounded-full bg-yellow px-6 py-3 font-krona text-xs font-bold">
+              Add to cart
+            </button>
           </div>
           {/* description */}
           <p>{singleProduct.description.replace(/(<([^>]+)>)/gi, "")}</p>
@@ -68,6 +61,7 @@ const Product = () => {
           </div> */}
         </div>
       </div>
+      <RecommendedProducts product={singleProduct} />
     </div>
   );
 };
