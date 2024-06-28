@@ -1,15 +1,26 @@
 import React from "react";
 import useGetRecommendedProducts from "../../hooks/useGetRecommendedProducts";
+import { ProductCard } from "../../components";
 
 const RecommendedProducts = ({ product }) => {
   const products = useGetRecommendedProducts(product);
   if (product.length === 0) return null;
   return (
     <>
-      {products.map((item, index) => (
-        <p key={`${item}.${index}`}>{item.name}</p>
-      ))}
       <p>Recommended Products</p>
+      <div className="flex flex-wrap items-center justify-center">
+        {products.map((item) => (
+          <ProductCard
+            key={item.id}
+            id={item.id}
+            name={item.name}
+            brand={item.brand}
+            imgUrl={item.api_featured_image}
+            price={item.price}
+            currency={item.price_sign}
+          />
+        ))}
+      </div>
     </>
   );
 };

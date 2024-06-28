@@ -15,10 +15,8 @@ const useGetProduct = () => {
   }, [id]);
 
   useEffect(() => {
-    if (!singleProduct) {
-      getSingleProduct();
-    }
-  }, [singleProduct, getSingleProduct]);
+    getSingleProduct();
+  }, [id, getSingleProduct]);
 
   return {
     singleProduct,

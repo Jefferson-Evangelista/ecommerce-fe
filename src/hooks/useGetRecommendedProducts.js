@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const BASE_URL = "http://makeup-api.herokuapp.com/api/v1/products";
-
+const PRODUCTS_COUNT = 4;
 const useGetRecommendedProducts = (product) => {
   const [products, setProducts] = useState([]);
 
@@ -16,7 +16,12 @@ const useGetRecommendedProducts = (product) => {
           [key]: value,
         },
       })
-      .then((response) => setProducts(response.data));
+      .then((response) => {
+        const { data } = response;
+        data.length =
+          data.length > PRODUCTS_COUNT ? PRODUCTS_COUNT : data.length;
+        setProducts(data);
+      });
   };
 
   useEffect(() => {

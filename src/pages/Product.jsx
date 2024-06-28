@@ -1,14 +1,21 @@
+import { useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import useGetProduct from "../hooks/useGetProduct";
 import { ProductPrice, ProductTitle, RecommendedProducts } from "../components";
 
 const Product = () => {
+  const location = useLocation();
   const { singleProduct } = useGetProduct();
 
-  if (!singleProduct) return <p>Loading...</p>;
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
+  if (!singleProduct) return <p>Loading...</p>;
   return (
     <div
-      className="container mx-auto mt-20 h-screen
+      className="container mx-auto mt-20
     "
     >
       <div className="mb-10 flex w-full">
