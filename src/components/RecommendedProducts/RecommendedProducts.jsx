@@ -1,13 +1,13 @@
 import React from "react";
 import useGetRecommendedProducts from "../../hooks/useGetRecommendedProducts";
-import { ProductCard } from "../../components";
+import { ProductCard, SectionTitle } from "../../components";
 
 const RecommendedProducts = ({ product }) => {
   const products = useGetRecommendedProducts(product);
   if (product.length === 0) return null;
   return (
     <>
-      <p>Recommended Products</p>
+     <SectionTitle text="For you" />
       <div className="flex flex-wrap items-center justify-center">
         {products.map((item) => (
           <ProductCard

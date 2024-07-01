@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import useGetProduct from "../hooks/useGetProduct";
-import { ProductPrice, ProductTitle, RecommendedProducts } from "../components";
+import { ProductPrice, ProductTitle, RecommendedProducts, SectionTitle, Benefits } from "../components";
 
 const Product = () => {
   const location = useLocation();
@@ -51,13 +51,17 @@ const Product = () => {
           </div>
           {/* description */}
           <p>{singleProduct.description.replace(/(<([^>]+)>)/gi, "")}</p>
-          {/* for you product */}
-
-          {/* <div className="flex flex-wrap justify-center">
+        </div>
+      </div>
+      {/* for you product */}
+      <Benefits />
+      <RecommendedProducts product={singleProduct} />
+      
+      {/* <div className="flex flex-wrap justify-center">
             {products.map((product, index) => (
               <Product
-                key={product.id}
-                id={product.id}
+              key={product.id}
+              id={product.id}
                 name={product.name}
                 brand={product.brand}
                 imgUrl={product.api_featured_image}
@@ -66,9 +70,6 @@ const Product = () => {
               />
             ))}
           </div> */}
-        </div>
-      </div>
-      <RecommendedProducts product={singleProduct} />
     </div>
   );
 };

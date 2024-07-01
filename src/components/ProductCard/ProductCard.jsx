@@ -4,18 +4,19 @@ import { ProductPrice } from "../../components";
 
 const ProductCard = ({ id, name, brand, imgUrl, price }) => (
   <Link
-    className="delay-50 mb-6 mr-6 flex transform flex-col rounded-md px-4 py-6 align-middle transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+    className="delay-50 mb-6 mr-6 flex transform flex-col rounded-md px-4 py-6 items-center transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
     to={`/product/${id}`}
   >
-    <div className="mb-6 flex flex-1 flex-col justify-center p-8">
+    <div className="mb-4 flex flex-1 flex-col justify-center">
       <img
-        width={120}
+        width='120'
         src={`https://${imgUrl}`}
         alt={name}
-        className="mx-auto "
+        className="mx-auto"
       />
     </div>
-    <div>
+    <div className="
+    flex-1">
       <p className="font-krona text-sm lowercase text-yellow">{name}</p>
       <p className="mb-4">{brand}</p>
       <ProductPrice price={price} />
