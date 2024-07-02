@@ -12,6 +12,7 @@ import ProductCard from "./ProductCard/ProductCard";
 import ProductPrice from "./ProductPrice/ProductPrice";
 import ProductTitle from "./ProductTitle/ProductTitle";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
+import ProductPreview from "./ProductPreview/ProductPreview";
 
 export {
   Navbar,
@@ -28,4 +29,5 @@ export {
   ProductPrice,
   ProductTitle,
   RecommendedProducts,
+  ProductPreview,
 };
