@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { ProductPrice } from "../../components";
 
 const ProductPreview = ({ name, img, type, category, price, description }) => {
@@ -33,3 +34,12 @@ const ProductPreview = ({ name, img, type, category, price, description }) => {
 };
 
 export default ProductPreview;
+
+ProductPreview.PropTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

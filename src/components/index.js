@@ -13,6 +13,7 @@ import ProductPrice from "./ProductPrice/ProductPrice";
 import ProductTitle from "./ProductTitle/ProductTitle";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
 import ProductPreview from "./ProductPreview/ProductPreview";
+import CartButton from "./CartButton/CartButton";
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   ProductTitle,
   RecommendedProducts,
   ProductPreview,
+  CartButton,
 };
