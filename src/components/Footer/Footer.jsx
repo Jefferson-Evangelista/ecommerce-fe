@@ -1,95 +1,59 @@
 import React from "react";
 
-const Footer = () => {
-  const aboutLinks = [
-    "about",
-    "about aphrodite",
-    "careers",
-    "socialmedia",
-    "affiliates",
-    "supplychain",
-    "sitemap",
-    "globalsites",
-  ];
-  const skincareLinks = ["skincare", "makeup", "skincare", "fragrance"];
-  const makeupLinks = ["makeup", "base", "contour", "eyemakeup", "lips"];
-  const supplementLinks = [
-    "supplements",
-    "hair & nails",
-    "vitamins",
-    "nutrients",
-  ];
-  const luxuryLinks = ["luxury", "makeup", "skincare", "fragrance"];
+import links from "../../data/footerLinks.json";
+import BrandLink from "../BrandLink";
+import { InstagramIcon, FacebookIcon, TwitterIcon } from "../Icons";
 
-  return (
-    <footer className="bg-dark px-8 py-10 text-light">
-      <div className="flex justify-around">
-        <div>
-          <a className="font-krona text-2xl text-yellow " href="">
-            Aphrodite
-          </a>
-          <p className="text-xs text-darkGrey">Be beautiful</p>
-        </div>
-        <div className="flex w-1/2 justify-evenly">
+const Footer = () => (
+  <footer className="flex flex-col justify-between bg-dark p-8 text-light md:flex-row">
+    <BrandLink classes="text-yellow mb-4 md:mb-0 md:pl-4 inline-block order-1" />
+
+    <div className="order-3 flex flex-col justify-between space-x-0 space-y-8 md:order-2 md:mx-auto md:flex-row md:space-x-8 md:space-y-0">
+      {links.map((item) => (
+        <div className="flex flex-col flex-wrap" key={item.title}>
+          <h6 className="font-krona text-sm">{item.title}</h6>
           <div>
-            {aboutLinks.map((link, index) => (
-              <a
-                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
-                href="/"
-                key={index}
+            {item.links.map((link) => (
+              <Link
+                to={link.path}
+                key={link.name}
+                className="block text-sm lowercase hover:text-yellow"
               >
-                {link}
-              </a>
-            ))}
-          </div>
-          <div>
-            {skincareLinks.map((link, index) => (
-              <a
-                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
-                href="/"
-                key={index}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-          <div>
-            {makeupLinks.map((link, index) => (
-              <a
-                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
-                href="/"
-                key={index}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-          <div>
-            {supplementLinks.map((link, index) => (
-              <a
-                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
-                href="/"
-                key={index}
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-          <div>
-            {luxuryLinks.map((link, index) => (
-              <a
-                className={`${index === 0 ? "text-md mb-2 font-krona" : "mb-1 text-sm font-normal hover:text-yellow"} ml-4 flex flex-col`}
-                href="/"
-                key={index}
-              >
-                {link}
-              </a>
+                {link.name}
+              </Link>
             ))}
           </div>
         </div>
-      </div>
-    </footer>
-  );
-};
+      ))}
+    </div>
+
+    <div className="order-2 mb-6 flex space-x-4 text-yellow md:order-3 md:mb-0 md:block md:space-x-0">
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-light-grey mb-4 block"
+      >
+        <FacebookIcon />
+      </a>
+      <a
+        href="https://twitter.com"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-light-grey mb-4 block"
+      >
+        <TwitterIcon />
+      </a>
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:text-light-grey mb-4 block"
+      >
+        <InstagramIcon />
+      </a>
+    </div>
+  </footer>
+);
 
 export default Footer;
