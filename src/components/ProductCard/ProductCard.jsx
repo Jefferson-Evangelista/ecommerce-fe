@@ -9,7 +9,7 @@ const ProductCard = ({ id, name, brand, imgUrl, price }) => (
   >
     <div className="mb-4 flex flex-1 flex-col justify-center">
       <img
-        width="120"
+        width="120px"
         src={`https://${imgUrl}`}
         alt={name}
         className="mx-auto"

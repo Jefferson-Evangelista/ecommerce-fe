@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import links from "../../data/footerLinks.json";
-import BrandLink from "../BrandLink";
+import { BrandLink } from "../../components";
 import { InstagramIcon, FacebookIcon, TwitterIcon } from "../Icons";
 
 const Footer = () => (

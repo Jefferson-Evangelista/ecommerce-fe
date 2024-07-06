@@ -4,10 +4,10 @@ import { bannerImg2 } from "../../assets";
 
 const SecondaryBanner = () => {
   return (
-    <div className="container relative bottom-[-100px] mx-auto flex w-full items-center justify-between bg-pink px-24">
-      <div className="text-lg">
+    <div className="container relative bottom-[-100px] mx-auto flex w-full flex-col-reverse items-center justify-between bg-pink px-24 md:flex-row">
+      <div className=" flex flex-row items-start space-x-4 text-lg md:flex-col md:space-x-0">
         <h3 className="mb-4 font-krona">
-          <br /> Be natural, <br /> be smooth, <br /> beautify
+          Be natural, <br /> be smooth, <br /> beautify
         </h3>
         <ButtonLink path="/about" text="see more" />
       </div>

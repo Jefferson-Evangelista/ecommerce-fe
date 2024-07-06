@@ -18,7 +18,7 @@ const TopProducts = () => {
           <ButtonLink text="see more" isMain />
         </div>
         <div className="flex flex-wrap justify-center">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <ProductCard
               key={product.id}
               id={product.id}

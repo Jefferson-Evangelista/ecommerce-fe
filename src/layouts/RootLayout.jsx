@@ -4,9 +4,6 @@ import { Navbar, Footer } from "../components";
 
 const MainLayout = () => {
   return (
-    //Navbar
-    //Content
-    //Footer
     <>
       <Navbar />
       <Outlet />

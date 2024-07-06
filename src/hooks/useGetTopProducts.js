@@ -30,6 +30,7 @@ const PRODUCT_TAGS = [
 
 const PRODUCTS_COUNT = 8;
 
+
 const getRandomProductTag = () => {
   const randomNumber = Math.floor(Math.random() * PRODUCT_TAGS.length);
 
