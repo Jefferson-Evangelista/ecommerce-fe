@@ -15,6 +15,7 @@ import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
 import ProductPreview from "./ProductPreview/ProductPreview";
 import CartButton from "./CartButton/CartButton";
 import BrandLink from "./BrandLink/BrandLink";
+import FactNumber from "./FactNumber/FactNumber";
 
 export {
   Navbar,
@@ -34,4 +35,5 @@ export {
   ProductPreview,
   CartButton,
   BrandLink,
+  FactNumber,
 };
