@@ -33,7 +33,7 @@ const Footer = () => (
         href="https://facebook.com"
         target="_blank"
         rel="noreferrer"
-        className="hover:text-light-grey mb-4 block"
+        className="mb-4 block transition delay-150 hover:text-lightGrey"
       >
         <FacebookIcon />
       </a>
@@ -41,7 +41,7 @@ const Footer = () => (
         href="https://twitter.com"
         target="_blank"
         rel="noreferrer"
-        className="hover:text-light-grey mb-4 block"
+        className="mb-4 block transition delay-150 hover:text-lightGrey"
       >
         <TwitterIcon />
       </a>
@@ -49,7 +49,7 @@ const Footer = () => (
         href="https://instagram.com"
         target="_blank"
         rel="noreferrer"
-        className="hover:text-light-grey mb-4 block"
+        className="mb-4 block transition delay-150 hover:text-lightGrey"
       >
         <InstagramIcon />
       </a>
