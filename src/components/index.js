@@ -17,6 +17,9 @@ import CartButton from "./CartButton/CartButton";
 import BrandLink from "./BrandLink/BrandLink";
 import FactNumber from "./FactNumber/FactNumber";
 import SideBar from "./SideBar/SideBar";
+import PriceRange from "./PriceRange/PriceRange";
+import CategoriesBar from "./CategoriesBar/CategoriesBar";
+import HeaderBanner from "./HeaderBanner/HeaderBanner";
 
 export {
   Navbar,
@@ -38,4 +41,8 @@ export {
   BrandLink,
   FactNumber,
   SideBar,
+  PriceRange,
+  CategoriesBar,
+  HeaderBanner
+
 };

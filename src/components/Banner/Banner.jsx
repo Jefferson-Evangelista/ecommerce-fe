@@ -11,7 +11,7 @@ const Banner = () => {
           Unveil Your Radiance with Every Luxurious Touch
         </h1>
         <p className="mb-4 text-sm">
-          This is project is built with data from a MakeUp API using Axios,
+          This project is built with data from a MakeUp API using Axios,
           Tailwind CSS, ReactJS, PropTypes, React Context API, and React Router.
         </p>
         <p className="mb-4 text-sm">
