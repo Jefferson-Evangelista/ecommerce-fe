@@ -20,6 +20,7 @@ import SideBar from "./SideBar/SideBar";
 import PriceRange from "./PriceRange/PriceRange";
 import CategoriesBar from "./CategoriesBar/CategoriesBar";
 import HeaderBanner from "./HeaderBanner/HeaderBanner";
+import Loader from "./Loader/Loader";
 
 export {
   Navbar,
@@ -43,6 +44,7 @@ export {
   SideBar,
   PriceRange,
   CategoriesBar,
-  HeaderBanner
+  HeaderBanner,
+  Loader
 
 };
