@@ -1,5 +1,5 @@
-// import { useLayoutEffect } from "react";
-// import { useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
 import useGetProduct from "../hooks/useGetProduct";
 
 import {
@@ -12,18 +12,25 @@ import {
 } from "../components";
 
 const Product = () => {
-  // const location = useLocation();
+  const location = useLocation();
   const { singleProduct, isLoading } = useGetProduct();
 
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [location.pathname]);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
-  if (!singleProduct) return <p>Loading...</p>;
+  if (!singleProduct)
+    return (
+      <div className="flex h-screen items-center justify-center">
+        <Loader />
+      </div>
+    );
   return (
     <div className="container mx-auto mt-20">
       {isLoading ? (
-        <Loader />
+        <div className="flex h-screen items-center justify-center">
+          <Loader />
+        </div>
       ) : (
         <>
           <ProductTitle
@@ -39,10 +46,10 @@ const Product = () => {
             description={singleProduct.description}
           />
           {/* for you product */}
-          <Benefits />
-          <RecommendedProducts product={singleProduct} />
         </>
       )}
+      <Benefits />
+      <RecommendedProducts product={singleProduct} />
     </div>
   );
 };
