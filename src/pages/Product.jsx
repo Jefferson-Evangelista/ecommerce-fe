@@ -19,18 +19,11 @@ const Product = () => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  if (!singleProduct)
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <Loader />
-      </div>
-    );
+  if (!singleProduct) return <Loader classes="h-screen" />;
   return (
     <div className="container mx-auto mt-20">
       {isLoading ? (
-        <div className="flex h-screen items-center justify-center">
-          <Loader />
-        </div>
+        <Loader classes="h-screen" />
       ) : (
         <>
           <ProductTitle

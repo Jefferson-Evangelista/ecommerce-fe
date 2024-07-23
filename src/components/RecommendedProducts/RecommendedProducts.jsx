@@ -9,9 +9,7 @@ const RecommendedProducts = ({ product }) => {
     <>
       <SectionTitle text="For you" />
       {products.length === 0 ? (
-        <div className="my-4 flex items-center justify-center">
-          <Loader />
-        </div>
+        <Loader classes="my-4" />
       ) : (
         <div className="flex flex-wrap items-center justify-center">
           {products.map((item) => (

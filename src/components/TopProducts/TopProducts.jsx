@@ -28,7 +28,7 @@ const TopProducts = () => {
         <div className="flex flex-wrap justify-center">
           {products.length === 0 ? (
             <div className="my-4 flex items-center justify-center">
-              <Loader />
+              <Loader classes="my-4" />
             </div>
           ) : (
             <>
