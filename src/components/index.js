@@ -10,7 +10,6 @@ import Benefits from "./Benefits/Benefits";
 import BenefitsItem from "./BenefitsItem/BenefitsItem";
 import ProductCard from "./ProductCard/ProductCard";
 import ProductPrice from "./ProductPrice/ProductPrice";
-import ProductTitle from "./ProductTitle/ProductTitle";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
 import ProductPreview from "./ProductPreview/ProductPreview";
 import CartButton from "./CartButton/CartButton";
@@ -35,7 +34,6 @@ export {
   BenefitsItem,
   ProductCard,
   ProductPrice,
-  ProductTitle,
   RecommendedProducts,
   ProductPreview,
   CartButton,

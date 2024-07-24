@@ -4,8 +4,6 @@ import useGetProduct from "../hooks/useGetProduct";
 
 import {
   ProductPreview,
-  ProductPrice,
-  ProductTitle,
   RecommendedProducts,
   Benefits,
   Loader,
@@ -20,26 +18,20 @@ const Product = () => {
   }, [location.pathname]);
 
   if (!singleProduct) return <Loader classes="h-screen" />;
+
   return (
     <div className="container mx-auto mt-20">
       {isLoading ? (
         <Loader classes="h-screen" />
       ) : (
-        <>
-          <ProductTitle
-            name={singleProduct.name}
-            type={singleProduct.product_type.replace(/_/g, " ")}
-          />
-          <ProductPreview
-            name={singleProduct.name}
-            img={singleProduct.api_featured_image}
-            type={singleProduct.product_type}
-            category={singleProduct.category}
-            price={singleProduct.price}
-            description={singleProduct.description}
-          />
-          {/* for you product */}
-        </>
+        <ProductPreview
+          name={singleProduct.name}
+          img={singleProduct.api_featured_image}
+          type={singleProduct.product_type}
+          category={singleProduct.category}
+          price={singleProduct.price}
+          description={singleProduct.description}
+        />
       )}
       <Benefits />
       <RecommendedProducts product={singleProduct} />
