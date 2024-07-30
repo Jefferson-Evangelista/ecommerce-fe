@@ -20,6 +20,9 @@ import PriceRange from "./PriceRange/PriceRange";
 import CategoriesBar from "./CategoriesBar/CategoriesBar";
 import HeaderBanner from "./HeaderBanner/HeaderBanner";
 import Loader from "./Loader/Loader";
+import TopBar from "./TopBar/TopBar";
+import Dropdown from "./Dropdown/Dropdown";
+import Products from "./Products/Products";
 
 export {
   Navbar,
@@ -43,6 +46,9 @@ export {
   PriceRange,
   CategoriesBar,
   HeaderBanner,
-  Loader
+  Loader,
+  TopBar,
+  Dropdown,
+  Products
 
 };

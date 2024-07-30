@@ -14,5 +14,8 @@ export default Info;
 Info.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+};
+
+Info.defaultProps = {
+  category: "",
 };

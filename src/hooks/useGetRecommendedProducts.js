@@ -38,7 +38,7 @@ const useGetRecommendedProducts = product => {
                 const { data } = response;
 
                 if (data.length > PRODUCTS_COUNT) {
-                    const index = getRandomIndex(data.length - PRODUCTS_COUNT);
+                    const index = getRandomIndex(data.length - PRODUCTS_COUNT); 
                     const randomProducts = getRandomProducts(index, data);
 
                     setProducts(randomProducts);

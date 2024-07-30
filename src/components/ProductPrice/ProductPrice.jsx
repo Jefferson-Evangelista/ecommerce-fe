@@ -13,10 +13,11 @@ const ProductPrice = ({ price, isLarge }) => (
 export default ProductPrice;
 
 ProductPrice.propTypes = {
-  price: PropTypes.string.isRequired,
+  price: PropTypes.string,
   isLarge: PropTypes.bool,
 };
 
 ProductPrice.defaulProps = {
+  price: "0.0",
   isLarge: false,
 };

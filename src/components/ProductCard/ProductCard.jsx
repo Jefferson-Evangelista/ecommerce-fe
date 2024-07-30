@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ProductPrice } from "../../components";
+import PropTypes from "prop-types";
 
 const ProductCard = ({ id, name, brand, imgUrl, price }) => (
   <Link
