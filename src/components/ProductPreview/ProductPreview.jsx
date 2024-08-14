@@ -10,7 +10,7 @@ const ProductPreview = ({ name, img, type, price, category, description }) => (
   <>
     <Title name={name} type={type} />
     <div className="mb-20 flex w-full flex-col items-center justify-center md:flex-row">
-      <Image name={name} img={img} />
+      <Image img={img} name={name} />
 
       <div className="flex-1">
         <Info type={type} name={name} category={category} />
@@ -32,6 +32,7 @@ ProductPreview.propTypes = {
   name: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

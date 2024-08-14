@@ -1,7 +1,7 @@
-import React, { useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import useGetProduct from "../hooks/useGetProduct";
+
 import {
   ProductPreview,
   RecommendedProducts,
@@ -33,7 +33,6 @@ const Product = () => {
           description={singleProduct.description}
         />
       )}
-
       <Benefits />
       <RecommendedProducts product={singleProduct} />
     </div>

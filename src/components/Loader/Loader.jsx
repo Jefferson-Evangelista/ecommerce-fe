@@ -3,7 +3,7 @@ import React from "react";
 const Loader = ({ classes }) => {
   return (
     <div className={`${classes} flex items-center justify-center`}>
-      <div title="loader">
+      <div className="loader loader--style1" title="0">
         <svg
           version="1.1"
           id="loader-1"

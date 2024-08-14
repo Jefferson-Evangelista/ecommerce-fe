@@ -8,13 +8,13 @@ const BASE_URL = 'http://makeup-api.herokuapp.com/api/v1/products';
 const useSearch = () => {
     const [products, setProducts] = useState([]);
 
-    const getProducts = (params) => {
+    const getProducts = params => {
         axios
             .get(`${BASE_URL}.json`, {
                 params,
             })
             .then(({ data }) => {
-                console.log({ data })
+                console.log({ data });
                 setProducts(data);
             });
     };
@@ -23,8 +23,8 @@ const useSearch = () => {
         const params = {
             [type]: value,
         };
-        getProducts(params)
-    }
+        getProducts(params);
+    };
 
     useEffect(() => {
         getProducts();
