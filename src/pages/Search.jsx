@@ -1,10 +1,7 @@
 import React from "react";
-import { HeaderBanner, SideBar, TopBar, Products } from "../components";
-import useSearch from "../hooks/useSearch";
+import { HeaderBanner, SideBar, TopBar } from "../components";
 
 const Search = () => {
-  const { products, setFilter } = useSearch();
-
   return (
     <>
       <HeaderBanner />
@@ -13,11 +10,9 @@ const Search = () => {
           <SideBar />
         </div>
         <div className="topbar">
-          <TopBar setFilter={setFilter} />
+          <TopBar />
         </div>
-        <div className="results">
-          <Products products={products} />
-        </div>
+        <div className="results">Results</div>
       </div>
     </>
   );

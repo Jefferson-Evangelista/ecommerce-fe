@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Image = ({ img, name }) => (
-  <div className="flex w-2/5 p-10">
-    <img width="240" src={img} alt={name} className="mx-auto" />
+const Image = ({ name, img }) => (
+  <div className="flex w-3/4 items-center justify-center sm:w-2/4 md:w-1/4 lg:mr-10 lg:w-full">
+    <img src={img} alt={name} />
   </div>
 );
 

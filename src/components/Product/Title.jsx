@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Title = ({ name, type }) => (
   <div className="mb-10">
     <h5 className="font-krona text-sm">{name}</h5>
-    <p className="text-sm text-darkGrey">{type}</p>
+    <p className="text-dark-grey text-sm">{type}</p>
   </div>
 );
 

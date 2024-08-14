@@ -1,35 +1,22 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from 'react';
+import axios from 'axios';
 
-const BASE_URL = "http://makeup-api.herokuapp.com/api/v1/products";
 const PRODUCTS_COUNT = 4;
-const useGetRecommendedProducts = (product) => {
-  const [products, setProducts] = useState([]);
+const BASE_URL = 'http://makeup-api.herokuapp.com/api/v1/products';
 
-  const key = product.product_type ? "product_type" : "brand";
-  const value = product.product_type ? product.product_type : product.brand;
+const getRandomIndex = (max, min = 0) => {
+    return Math.floor(Math.random() * (max - min) + min);
+};
 
-  const getRecommendedProducts = () => {
-    axios
-      .get(`${BASE_URL}.json`, {
-        params: {
-          [key]: value,
-        },
-      })
-      .then((response) => {
-        const { data } = response;
-        data.length =
-          data.length > PRODUCTS_COUNT ? PRODUCTS_COUNT : data.length;
-        setProducts(data);
-      });
-  };
+const getRandomProducts = (randomIndex, data) => {
+    let i = randomIndex;
+    const products = [];
 
-  useEffect(() => {
-    if (!product) return;
-    getRecommendedProducts();
-  }, []);
+    for (let index = 0; index < PRODUCTS_COUNT; index++) {
+        products.push(data[i]);
+        i++;
+    }
 
-<<<<<<< HEAD
     return products;
 };
 
@@ -51,7 +38,7 @@ const useGetRecommendedProducts = product => {
                 const { data } = response;
 
                 if (data.length > PRODUCTS_COUNT) {
-                    const index = getRandomIndex(data.length - PRODUCTS_COUNT); 
+                    const index = getRandomIndex(data.length - PRODUCTS_COUNT);
                     const randomProducts = getRandomProducts(index, data);
 
                     setProducts(randomProducts);
@@ -68,9 +55,6 @@ const useGetRecommendedProducts = product => {
     }, [product, getRecommendedProducts]);
 
     return products;
-=======
-  return products;
->>>>>>> parent of d927309 (to be continued)
 };
 
 export default useGetRecommendedProducts;

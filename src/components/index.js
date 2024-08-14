@@ -11,7 +11,6 @@ import BenefitsItem from "./BenefitsItem/BenefitsItem";
 import ProductCard from "./ProductCard/ProductCard";
 import ProductPrice from "./ProductPrice/ProductPrice";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
-import ProductPreview from "./ProductPreview/ProductPreview";
 import CartButton from "./CartButton/CartButton";
 import BrandLink from "./BrandLink/BrandLink";
 import FactNumber from "./FactNumber/FactNumber";
@@ -22,7 +21,7 @@ import HeaderBanner from "./HeaderBanner/HeaderBanner";
 import Loader from "./Loader/Loader";
 import TopBar from "./TopBar/TopBar";
 import Dropdown from "./Dropdown/Dropdown";
-import Products from "./Products/Products";
+// import Products from "./Products/Products";
 
 export {
   Navbar,
@@ -38,7 +37,6 @@ export {
   ProductCard,
   ProductPrice,
   RecommendedProducts,
-  ProductPreview,
   CartButton,
   BrandLink,
   FactNumber,
@@ -49,6 +47,6 @@ export {
   Loader,
   TopBar,
   Dropdown,
-  Products
+  // Products
 
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Info = ({ type, name, category }) => (
+const Info = ({ category, name, type }) => (
   <>
-    <p className="text-xm font-krona text-yellow">{type}</p>
+    <p className="font-krona text-sm text-yellow">{type}</p>
     <h1 className="font-krona text-base">{name}</h1>
     <p>{category}</p>
   </>
@@ -14,8 +14,5 @@ export default Info;
 Info.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-};
-
-Info.defaultProps = {
-  category: "",
+  category: PropTypes.string.isRequired,
 };
