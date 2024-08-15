@@ -9,7 +9,7 @@ import UniqueSellingPoint from "./UniqueSellingPoint/UniqueSellingPoint";
 import Benefits from "./Benefits/Benefits";
 import BenefitsItem from "./BenefitsItem/BenefitsItem";
 import ProductCard from "./ProductCard/ProductCard";
-import ProductPrice from "./ProductPrice/ProductPrice";
+import Price from "./Price/Price";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
 import CartButton from "./CartButton/CartButton";
 import BrandLink from "./BrandLink/BrandLink";
@@ -21,7 +21,7 @@ import HeaderBanner from "./HeaderBanner/HeaderBanner";
 import Loader from "./Loader/Loader";
 import TopBar from "./TopBar/TopBar";
 import Dropdown from "./Dropdown/Dropdown";
-// import Products from "./Products/Products";
+import Products from "./Products/Products";
 
 export {
   Navbar,
@@ -35,7 +35,7 @@ export {
   Benefits,
   BenefitsItem,
   ProductCard,
-  ProductPrice,
+  Price,
   RecommendedProducts,
   CartButton,
   BrandLink,
@@ -47,6 +47,6 @@ export {
   Loader,
   TopBar,
   Dropdown,
-  // Products
+  Products
 
 };

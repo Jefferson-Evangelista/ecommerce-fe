@@ -5,7 +5,7 @@ import { bannerImg2 } from "../../assets";
 const HeaderyBanner = () => {
   return (
     <div className="mx-6 mb-4">
-      <div className="bottom-[-100px] flex w-full flex-col-reverse items-center justify-between bg-pink px-24 sm:flex-row">
+      <div className="bottom-[-100px] flex w-full flex-col-reverse items-center justify-between bg-pink px-24 xs:flex-row">
         <div className=" flex flex-row items-start space-x-4 text-lg md:flex-col md:space-x-0">
           <h3 className="mb-4 font-krona text-base">
             Be natural, <br /> be smart, <br /> be you

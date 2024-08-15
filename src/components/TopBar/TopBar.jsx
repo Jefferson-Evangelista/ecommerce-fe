@@ -1,14 +1,22 @@
 import React from "react";
 import { Dropdown } from "../../components";
+import { BRANDS } from "../../constants/brands";
+import { SORTING } from "../../constants/sorting";
 
-const brands = ["a", "b", "c"];
-const sorts = ["aa", "bb", "cc"];
+const TopBar = ({ setFilter }) => {
+  const handleOnChange = (e) => {
+    const { name, value } = e.target;
+    setFilter(name, value);
+  };
 
-const TopBar = () => {
   return (
-    <div>
-      <Dropdown type="brands" values={brands} />
-      <Dropdown type="sort" values={sorts} />
+    <div className="flex space-x-4">
+      <Dropdown
+        type="brand"
+        values={["all", ...BRANDS]}
+        onChange={handleOnChange}
+      />
+      <Dropdown type="sort" values={SORTING} onChange={handleOnChange} />
     </div>
   );
 };

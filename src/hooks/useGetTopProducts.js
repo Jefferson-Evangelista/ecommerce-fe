@@ -51,6 +51,7 @@ const useGetTopProducts = () => {
         const { data } = response;
         data.length =
           data.length > PRODUCTS_COUNT ? PRODUCTS_COUNT : data.length;
+          
         setProducts(data);
       });
   };

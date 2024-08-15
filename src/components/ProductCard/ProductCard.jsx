@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ProductPrice } from "../../components";
+import { Price } from "../../components";
 import PropTypes from "prop-types";
 
 const ProductCard = ({ id, name, brand, imgUrl, price }) => (
@@ -24,7 +24,7 @@ const ProductCard = ({ id, name, brand, imgUrl, price }) => (
         {name.replace(/^(.{12}[^\s]*).*/, "$1")}
       </p>
       <p className="mb-4">{brand}</p>
-      <ProductPrice price={price} />
+      <Price price={price} />
     </div>
   </Link>
 );

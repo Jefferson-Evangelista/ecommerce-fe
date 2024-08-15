@@ -7,8 +7,9 @@ const BASE_URL = "http://makeup-api.herokuapp.com/api/v1/products";
 
 const formatProduct = (data) => ({
   ...data, 
-  product_type: data.product_type.replace(/_/g, " "),
-  description: data.description.replace(/(<([^>]+)>)/gi, ""),
+  category: data.category?.replace(/_/g, " "),
+  product_type: data.product_type?.replace(/_/g, " "),
+  description: data.description?.replace(/(<([^>]+)>)/gi, ""),
   api_featured_image: `https://${data.api_featured_image}`,
 });
 

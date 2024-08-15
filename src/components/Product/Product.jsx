@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import CartButton from "../CartButton";
-import Price from "../Price";
+import { CartButton, Price } from "../../components";
 import Image from "./Image";
 import Info from "./Info";
 import Description from "./Description";
@@ -16,7 +15,6 @@ const Product = ({ name, img, type, category, price, description }) => (
 
       <div>
         <Info name={name} type={type} category={category} />
-
         <div className="my-10 flex justify-between">
           <Price price={price} isLarge />
           <CartButton />
