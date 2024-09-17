@@ -1,26 +1,16 @@
 import React from "react";
-import { HeaderBanner, SideBar, TopBar, Products } from "../components";
-import useSearch from "../hooks/useSearch";
+import { HeaderBanner, Search } from "../components";
+import SearchProvider from "../state/search-context";
 
-const Search = () => {
-  const { products, setFilter } = useSearch();
-
+const SearchPage = () => {
   return (
     <>
       <HeaderBanner />
-      <div className="search">
-        <div className="sidebar">
-          <SideBar setFilter={setFilter} />
-        </div>
-        <div className="topbar">
-          <TopBar setFilter={setFilter} />
-        </div>
-        <div className="results">
-          <Products products={products} />
-        </div>
-      </div>
+      <SearchProvider>
+        <Search />
+      </SearchProvider>
     </>
   );
 };
 
-export default Search;
+export default SearchPage;

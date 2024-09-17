@@ -22,6 +22,7 @@ import Loader from "./Loader/Loader";
 import TopBar from "./TopBar/TopBar";
 import Dropdown from "./Dropdown/Dropdown";
 import Products from "./Products/Products";
+import Search from "./Search/Search";
 
 export {
   Navbar,
@@ -47,6 +48,7 @@ export {
   Loader,
   TopBar,
   Dropdown,
-  Products
+  Products,
+  Search
 
 };

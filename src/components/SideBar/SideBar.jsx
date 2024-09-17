@@ -1,5 +1,5 @@
 import React from "react";
-import { PriceRange, CategoriesBar, HeaderBanner } from "../../components";
+import { PriceRange, CategoriesBar } from "../../components";
 
 const SideBar = ({ setFilter }) => {
   return (
