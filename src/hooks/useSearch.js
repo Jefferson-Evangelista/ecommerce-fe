@@ -7,7 +7,7 @@ const useSearch = () => {
     const [products, setProducts] = useState([]);
   
     const getProducts = (params) => {
-      
+      setProducts([]);
 
       axios
         .get(`${BASE_URL}.json`, {
