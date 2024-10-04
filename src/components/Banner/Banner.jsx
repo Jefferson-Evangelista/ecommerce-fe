@@ -21,11 +21,11 @@ const Banner = () => {
         </p>
         <ButtonLink path="/about" text="see more" isMain />
       </div>
-      <div className="mb-10 ml-8 flex flex-1 items-center justify-end md:mb-0 ">
+      <div className="mb-10 flex flex-1 items-center justify-end sm:ml-8 md:mb-0 ">
         <img
           src={bannerImg}
           alt="Beauty products on a blanket"
-          className="borderShape object-fit h-[350px] w-[350px] drop-shadow-2xl sm:h-[400px] sm:w-[400px] md:h-[550px] md:w-[550px]"
+          className="borderShape object-fit w-[230px] drop-shadow-2xl sm:h-[300px] sm:w-[300px] md:h-[550px] md:w-[550px]"
         />
       </div>
     </div>

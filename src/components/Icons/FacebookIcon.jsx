@@ -2,7 +2,7 @@ import React from "react";
 
 const FacebookIcon = () => (
   <svg
-    className="h-6 w-6"
+    className="h-4 w-4 sm:h-6 sm:w-6"
     viewBox="0 0 10 18"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

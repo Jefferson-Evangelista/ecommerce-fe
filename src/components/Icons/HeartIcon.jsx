@@ -8,7 +8,7 @@ const HeartIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="mr-4 h-6 w-6"
+      className="mr-4 h-4 w-4 sm:h-6 sm:w-6"
     >
       <path
         strokeLinecap="round"
