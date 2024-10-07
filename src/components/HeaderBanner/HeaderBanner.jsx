@@ -5,15 +5,15 @@ import { bannerImg2 } from "../../assets";
 const HeaderyBanner = () => {
   return (
     <div className="mx-6 mb-4">
-      <div className="bottom-[-100px] flex w-full flex-col-reverse items-center justify-between bg-pink px-24 xs:flex-row">
+      <div className="bottom-[-100px] flex w-full flex-col-reverse items-center justify-between bg-pink xs:flex-row md:px-24">
         <div className=" flex flex-row items-start space-x-4 text-lg md:flex-col md:space-x-0">
           <h3 className="mb-4 font-krona text-base">
             Be natural, <br /> be smart, <br /> be you
           </h3>
         </div>
-        <div className="ml-4">
+        <div className="md:ml-4">
           <img
-            className="h-[250px] w-[250px] py-8"
+            className="h-[250px] w-[250px] py-4 md:py-8"
             src={bannerImg2}
             alt="skincare products"
           />

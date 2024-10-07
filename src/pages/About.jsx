@@ -7,11 +7,11 @@ const About = () => {
       <div className="flex justify-center">
         <div className="relative mx-auto my-16 md:my-20">
           <div className="absolute left-[-10px] top-0 z-[-1] h-10 w-10 rounded-full bg-yellow md:h-16 md:w-16" />
-          <BrandLink classes="text-5xl md:text-6xl md:ml-6 ml-2" />
+          <BrandLink classes="text-4xl sm:text-5xl md:text-6xl md:ml-6 ml-2" />
         </div>
       </div>
-      <div className="py-10">
-        <div className="mx-auto w-2/3 text-justify ">
+      <div className="py-4 sm:py-10">
+        <div className="mx-auto w-4/5 text-justify md:w-2/3">
           <p className="mb-4 ">
             We are the leading omnichannel provider for premium beauty in
             Europe. Since our foundation more than 200 years ago, beauty has

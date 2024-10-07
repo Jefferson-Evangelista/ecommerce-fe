@@ -8,7 +8,7 @@ const CartIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-4 w-4 sm:h-6 sm:w-6"
+      className="mr-4 h-4 w-4 sm:h-6 sm:w-6 md:mr-0"
     >
       <path
         strokeLinecap="round"
